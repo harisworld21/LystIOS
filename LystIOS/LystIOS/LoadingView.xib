@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="LystIOS" customModuleProvider="target">
+            <connections>
+                <outlet property="customView" destination="iN0-l3-epB" id="tq8-gN-xCr"/>
+                <outlet property="spinner" destination="fU1-6i-laT" id="A5P-Zr-ENn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fU1-6i-laT" customClass="AMDots" customModule="LystIOS" customModuleProvider="target">
+                    <rect key="frame" x="149" y="158" width="116" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="MAb-2I-riU"/>
+                    </constraints>
+                </view>
+                <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9dk-Cu-CTF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="366"/>
+                    <color key="backgroundColor" red="0.27879467610000003" green="0.26909866929999998" blue="0.28991827370000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9dk-Cu-CTF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Au-ou-tT1"/>
+                <constraint firstItem="fU1-6i-laT" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="53X-uN-NYx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="9dk-Cu-CTF" secondAttribute="trailing" id="5gQ-PH-L6X"/>
+                <constraint firstItem="fU1-6i-laT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="iEC-kQ-1tR"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="9dk-Cu-CTF" secondAttribute="bottom" id="nOt-mz-Xqx"/>
+                <constraint firstItem="9dk-Cu-CTF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x7F-RN-a2G"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="28.985507246376812" y="106.47321428571428"/>
+        </view>
+    </objects>
+</document>
