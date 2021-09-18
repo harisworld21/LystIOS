@@ -26,6 +26,7 @@
 		15DF3E7026F3DBC0000884FD /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF3E6F26F3DBC0000884FD /* AnimalCell.swift */; };
 		15DF3E7B26F3DEA9000884FD /* AppConstantLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF3E7A26F3DEA9000884FD /* AppConstantLibrary.swift */; };
 		15DF3E8326F3E0CA000884FD /* AnimalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15DF3E8226F3E0CA000884FD /* AnimalCell.xib */; };
+		15F0DF1426F5F21C004B36DA /* MockBreedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F0DF1326F5F21C004B36DA /* MockBreedAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		15DF3E6F26F3DBC0000884FD /* AnimalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		15DF3E7A26F3DEA9000884FD /* AppConstantLibrary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstantLibrary.swift; sourceTree = "<group>"; };
 		15DF3E8226F3E0CA000884FD /* AnimalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimalCell.xib; sourceTree = "<group>"; };
+		15F0DF1326F5F21C004B36DA /* MockBreedAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBreedAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				15DF3E3C26F3CFFC000884FD /* LystIOSTests.swift */,
+				15F0DF1326F5F21C004B36DA /* MockBreedAPI.swift */,
 				15DF3E3E26F3CFFC000884FD /* Info.plist */,
 			);
 			path = LystIOSTests;
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				15DF3E3D26F3CFFC000884FD /* LystIOSTests.swift in Sources */,
+				15F0DF1426F5F21C004B36DA /* MockBreedAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

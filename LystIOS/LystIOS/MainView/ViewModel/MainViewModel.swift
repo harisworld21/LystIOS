@@ -29,7 +29,6 @@ extension MainViewModel {
     private func setupInitial(){
         //API Call
         getDataFromServer(url: AnimalConstants.BreedAPIUrlCat)
-        getDataFromServer(url: AnimalConstants.BreedAPIUrlDog)
     }
     
     func getDataFromServer(url:String) {

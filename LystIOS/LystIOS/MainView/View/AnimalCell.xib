@@ -18,32 +18,35 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wqx-Wm-fps">
-                        <rect key="frame" x="0.0" y="0.0" width="211" height="210"/>
+                        <rect key="frame" x="0.0" y="0.0" width="170" height="170"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="wqx-Wm-fps" secondAttribute="height" multiplier="1:1" id="8BW-ug-ukv"/>
+                        </constraints>
                     </imageView>
                     <view alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8OQ-h8-c3H">
-                        <rect key="frame" x="0.0" y="126" width="211" height="84"/>
+                        <rect key="frame" x="0.0" y="102" width="211" height="68"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dolmation" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ob0-DO-vMH">
-                        <rect key="frame" x="10" y="136" width="191" height="21"/>
+                        <rect key="frame" x="10" y="112" width="191" height="21"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                         <color key="textColor" red="0.95552833790000002" green="0.55906067559999995" blue="0.01063947803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age: 5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-Ht-fjw">
-                        <rect key="frame" x="10" y="167" width="41.5" height="17"/>
+                        <rect key="frame" x="10" y="143" width="41.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.95552833790000002" green="0.55906067559999995" blue="0.01063947803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight: 30Kg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2QB-bv-KrN">
-                        <rect key="frame" x="113.5" y="167" width="87.5" height="17"/>
+                        <rect key="frame" x="113.5" y="143" width="87.5" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.95552833790000002" green="0.55906067559999995" blue="0.01063947803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="r5o-1e-3C6">
-                        <rect key="frame" x="87" y="86.5" width="37" height="37"/>
+                        <rect key="frame" x="87" y="66.5" width="37" height="37"/>
                         <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </activityIndicatorView>
                 </subviews>
@@ -60,7 +63,7 @@
                     <constraint firstItem="wqx-Wm-fps" firstAttribute="leading" secondItem="aKM-54-SVW" secondAttribute="leading" id="EKk-pd-jcr"/>
                     <constraint firstItem="2QB-bv-KrN" firstAttribute="centerY" secondItem="rJi-Ht-fjw" secondAttribute="centerY" id="LWF-B1-Hxm"/>
                     <constraint firstAttribute="trailing" secondItem="8OQ-h8-c3H" secondAttribute="trailing" id="MSd-bq-aVK"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rJi-Ht-fjw" secondAttribute="bottom" constant="10" id="Mmv-Pk-m9O"/>
+                    <constraint firstAttribute="bottom" secondItem="rJi-Ht-fjw" secondAttribute="bottom" constant="10" id="Mmv-Pk-m9O"/>
                     <constraint firstItem="rJi-Ht-fjw" firstAttribute="top" secondItem="Ob0-DO-vMH" secondAttribute="bottom" constant="10" id="QWZ-Ze-6j1"/>
                     <constraint firstItem="rJi-Ht-fjw" firstAttribute="leading" secondItem="aKM-54-SVW" secondAttribute="leading" constant="10" id="UM3-1F-tsY"/>
                     <constraint firstItem="Ob0-DO-vMH" firstAttribute="top" secondItem="8OQ-h8-c3H" secondAttribute="top" constant="10" id="bPB-IP-KG9"/>
