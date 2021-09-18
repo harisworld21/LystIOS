@@ -12,8 +12,6 @@
 		153B7D5726F4ABC4007D8B13 /* RatingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153B7D5626F4ABC4007D8B13 /* RatingsView.swift */; };
 		153B7D5C26F4B452007D8B13 /* RatingsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 153B7D5B26F4B452007D8B13 /* RatingsView.xib */; };
 		153B7D6126F4B6D2007D8B13 /* DetailedView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 153B7D6026F4B6D2007D8B13 /* DetailedView.storyboard */; };
-		1559A85926F56CB700A509DA /* AMDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1559A85826F56CB700A509DA /* AMDots.swift */; };
-		1559A86126F56D7C00A509DA /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1559A86026F56D7C00A509DA /* LoadingView.xib */; };
 		15DF3E2626F3CFED000884FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF3E2526F3CFED000884FD /* AppDelegate.swift */; };
 		15DF3E2826F3CFED000884FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF3E2726F3CFED000884FD /* SceneDelegate.swift */; };
 		15DF3E2A26F3CFED000884FD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15DF3E2926F3CFED000884FD /* MainViewController.swift */; };
@@ -53,8 +51,6 @@
 		153B7D5626F4ABC4007D8B13 /* RatingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsView.swift; sourceTree = "<group>"; };
 		153B7D5B26F4B452007D8B13 /* RatingsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingsView.xib; sourceTree = "<group>"; };
 		153B7D6026F4B6D2007D8B13 /* DetailedView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailedView.storyboard; sourceTree = "<group>"; };
-		1559A85826F56CB700A509DA /* AMDots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMDots.swift; sourceTree = "<group>"; };
-		1559A86026F56D7C00A509DA /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		15DF3E2226F3CFED000884FD /* LystIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LystIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15DF3E2526F3CFED000884FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15DF3E2726F3CFED000884FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +98,112 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1559A86826F586CE00A509DA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				15DF3E2526F3CFED000884FD /* AppDelegate.swift */,
+				15DF3E2726F3CFED000884FD /* SceneDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		1559A86926F586DE00A509DA /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1559A87226F5875100A509DA /* Model */,
+				1559A87126F5873400A509DA /* ViewModel */,
+				1559A87026F5872700A509DA /* View */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		1559A87026F5872700A509DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				15DF3E2B26F3CFED000884FD /* Main.storyboard */,
+				15DF3E2926F3CFED000884FD /* MainViewController.swift */,
+				15DF3E8226F3E0CA000884FD /* AnimalCell.xib */,
+				15DF3E6F26F3DBC0000884FD /* AnimalCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1559A87126F5873400A509DA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				15DF3E6526F3DB99000884FD /* MainViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1559A87226F5875100A509DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				15DF3E6026F3DB8C000884FD /* BreedSearchModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1559A87326F5877200A509DA /* DetailedView */ = {
+			isa = PBXGroup;
+			children = (
+				1559A87626F5878800A509DA /* Model */,
+				1559A87526F5878200A509DA /* VIewModel */,
+				1559A87426F5877E00A509DA /* View */,
+			);
+			path = DetailedView;
+			sourceTree = "<group>";
+		};
+		1559A87426F5877E00A509DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				153B7D6026F4B6D2007D8B13 /* DetailedView.storyboard */,
+				153B7D4C26F49C64007D8B13 /* DetailedViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1559A87526F5878200A509DA /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				153B7D5126F4A627007D8B13 /* DetailViewModel.swift */,
+			);
+			path = VIewModel;
+			sourceTree = "<group>";
+		};
+		1559A87626F5878800A509DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1559A87726F587A400A509DA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1559A87826F587B200A509DA /* Ratings View */,
+				15DF3E7A26F3DEA9000884FD /* AppConstantLibrary.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1559A87826F587B200A509DA /* Ratings View */ = {
+			isa = PBXGroup;
+			children = (
+				153B7D5626F4ABC4007D8B13 /* RatingsView.swift */,
+				153B7D5B26F4B452007D8B13 /* RatingsView.xib */,
+			);
+			path = "Ratings View";
+			sourceTree = "<group>";
+		};
+		1559A87926F587C300A509DA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				15DF3E5B26F3DB70000884FD /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		15DF3E1926F3CFED000884FD = {
 			isa = PBXGroup;
 			children = (
@@ -125,23 +227,11 @@
 		15DF3E2426F3CFED000884FD /* LystIOS */ = {
 			isa = PBXGroup;
 			children = (
-				15DF3E2526F3CFED000884FD /* AppDelegate.swift */,
-				15DF3E2726F3CFED000884FD /* SceneDelegate.swift */,
-				15DF3E6026F3DB8C000884FD /* BreedSearchModel.swift */,
-				153B7D5626F4ABC4007D8B13 /* RatingsView.swift */,
-				153B7D5B26F4B452007D8B13 /* RatingsView.xib */,
-				15DF3E6526F3DB99000884FD /* MainViewModel.swift */,
-				153B7D5126F4A627007D8B13 /* DetailViewModel.swift */,
-				15DF3E2926F3CFED000884FD /* MainViewController.swift */,
-				15DF3E8226F3E0CA000884FD /* AnimalCell.xib */,
-				15DF3E6F26F3DBC0000884FD /* AnimalCell.swift */,
-				15DF3E7A26F3DEA9000884FD /* AppConstantLibrary.swift */,
-				15DF3E5B26F3DB70000884FD /* APIClient.swift */,
-				15DF3E2B26F3CFED000884FD /* Main.storyboard */,
-				153B7D6026F4B6D2007D8B13 /* DetailedView.storyboard */,
-				153B7D4C26F49C64007D8B13 /* DetailedViewController.swift */,
-				1559A85826F56CB700A509DA /* AMDots.swift */,
-				1559A86026F56D7C00A509DA /* LoadingView.xib */,
+				1559A87926F587C300A509DA /* Network */,
+				1559A87726F587A400A509DA /* Helpers */,
+				1559A87326F5877200A509DA /* DetailedView */,
+				1559A86926F586DE00A509DA /* MainView */,
+				1559A86826F586CE00A509DA /* Main */,
 				15DF3E2E26F3CFFB000884FD /* Assets.xcassets */,
 				15DF3E3026F3CFFB000884FD /* LaunchScreen.storyboard */,
 				15DF3E3326F3CFFB000884FD /* Info.plist */,
@@ -274,7 +364,6 @@
 				15DF3E3226F3CFFB000884FD /* LaunchScreen.storyboard in Resources */,
 				15DF3E2F26F3CFFB000884FD /* Assets.xcassets in Resources */,
 				153B7D5C26F4B452007D8B13 /* RatingsView.xib in Resources */,
-				1559A86126F56D7C00A509DA /* LoadingView.xib in Resources */,
 				15DF3E2D26F3CFED000884FD /* Main.storyboard in Resources */,
 				153B7D6126F4B6D2007D8B13 /* DetailedView.storyboard in Resources */,
 			);
@@ -304,7 +393,6 @@
 				15DF3E2A26F3CFED000884FD /* MainViewController.swift in Sources */,
 				15DF3E7B26F3DEA9000884FD /* AppConstantLibrary.swift in Sources */,
 				15DF3E2626F3CFED000884FD /* AppDelegate.swift in Sources */,
-				1559A85926F56CB700A509DA /* AMDots.swift in Sources */,
 				153B7D5226F4A627007D8B13 /* DetailViewModel.swift in Sources */,
 				15DF3E2826F3CFED000884FD /* SceneDelegate.swift in Sources */,
 				15DF3E7026F3DBC0000884FD /* AnimalCell.swift in Sources */,

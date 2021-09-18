@@ -37,7 +37,6 @@ public struct ApiClient {
     }
     
     static func downloadImage(from urlStr: String, completion: @escaping (UIImage?)->()) {
-        print("Download Started")
         guard let url = URL(string: urlStr) else {
             completion(nil)
             return
