@@ -15,7 +15,6 @@ class MainViewModel: NSObject {
     var reloadCollectionView: ()->() = {}
     var loading : (Bool)->() = {_ in}
     var shouldShowDetailsView : ()->(UIViewController) = {return UIViewController()}
-    var isAscendingOrder = true
     
     override init() {
         super.init()

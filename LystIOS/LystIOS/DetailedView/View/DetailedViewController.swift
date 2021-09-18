@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class DetailedViewController : UIViewController {
     
@@ -41,6 +42,16 @@ class DetailedViewController : UIViewController {
         energy.rating = Ratings(ratingVal: breedModel.breed?.energyLevel ?? 0, title: "Energy Level Rating")
         intelligence.rating = Ratings(ratingVal: breedModel.breed?.intelligence ?? 0, title: "Intelligence Rating")
         experimental.rating = Ratings(ratingVal: breedModel.breed?.experimental ?? 0, title: "Experimental Rating")
+    }
+    
+    @IBAction func wikipediaLink() {
+        if let url = URL(string: viewModel.breedSearchModel.breed?.wikipediaURL ?? "") {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+            let vc = SFSafariViewController(url: url, configuration: config)
+            present(vc, animated: true)
+        }
+
     }
     
 }

@@ -22,13 +22,44 @@ class LystIOSUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testSimpleLaunch() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .searchField).element.tap()
+        app.collectionViews.cells.otherElements.containing(.staticText, identifier:"Abyssinian").element.tap()
+        
+        let element = app.scrollViews.children(matching: .other).element(boundBy: 0).children(matching: .other).element(boundBy: 0)
+        element/*@START_MENU_TOKEN@*/.swipeRight()/*[[".swipeDown()",".swipeRight()"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        element/*@START_MENU_TOKEN@*/.swipeRight()/*[[".swipeDown()",".swipeRight()"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        element.swipeDown()
+        element.swipeDown()
 
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+    }
+    
+    func testSearchItem() throws {
+        //Search and find American Shorthair
+        let app = XCUIApplication()
+        app.launch()
+        let cellsQuery = app.collectionViews.cells
+        cellsQuery.otherElements.containing(.staticText, identifier:"American Shorthair").children(matching: .other).element.swipeUp()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .searchField).element.tap()
+        cellsQuery.otherElements.containing(.staticText, identifier:"American Shorthair").element.tap()
+    }
+    
+    func testWikipediaForBengalCat() throws {
+        //Search and find American Shorthair
+        
+        let app = XCUIApplication()
+        app.launch()
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element(boundBy: 1).children(matching: .other).element.children(matching: .searchField).element.tap()
+//        app.searchFields.containing(.button, identifier:"Clear text").element.tap()
+        app.collectionViews.cells.otherElements.containing(.staticText, identifier:"American Curl").element.tap()
+        app.scrollViews.otherElements/*@START_MENU_TOKEN@*/.staticTexts["Preview Detail in Wikipedia"]/*[[".buttons[\"Preview Detail in Wikipedia\"].staticTexts[\"Preview Detail in Wikipedia\"]",".staticTexts[\"Preview Detail in Wikipedia\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
     }
 
     func testLaunchPerformance() throws {
